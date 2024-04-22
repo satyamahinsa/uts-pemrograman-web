@@ -1,0 +1,24 @@
+.jumbotron {
+    background-image: url('assets/wallpaper.png'); /* Ganti dengan gambar hero sesuai kebutuhan */
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 0;
+    margin-bottom: 30px;
+}
+.jumbotron h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.card {
+    margin-bottom: 30px;
+}
+.card img {
+    max-height: 200px;
+    object-fit: cover;
+}
+.btn-logo {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}

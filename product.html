@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrans</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/product.css">
+    <!-- Custom CSS -->
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3 py-3 shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logo.jpg" alt="ELECTRANS" width="50" height="40">
+                ELECTRANS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link fs-5 fw-bold active" href="/">Home</a>
+                    <a class="nav-link fs-5 fw-bold" href="/product.html">Products</a>
+                    <a class="nav-link fs-5 fw-bold" href="/news.html">News</a>
+                    <a class="nav-link fs-5 fw-bold" href="/locate-stations.html">Locate Stations</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero section -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Selamat Datang di Katalog Produk Kami</h1>
+            <p>Temukan berbagai produk terbaik kami di sini.</p>
+        </div>
+    </div>
+
+<!-- Product section -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-md-6">
+            <div class="card">
+                <img src="assets/img/product1.jpg" class="card-img-top" alt="Product 1">
+                <div class="card-body">
+                    <h5 class="card-title">Produk 1</h5>
+                    <p class="card-text">Deskripsi produk 1.</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModal1">Lihat Detail</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="card">
+                <img src="assets/img/product2.jpg" class="card-img-top" alt="Product 2">
+                <div class="card-body">
+                    <h5 class="card-title">Produk 2</h5>
+                    <p class="card-text">Deskripsi produk 2.</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModal2">Lihat Detail</button>
+                </div>
+            </div>
+        </div>
+        <!-- Tambahkan card lain sesuai kebutuhan -->
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productModalLabel">Detail Produk</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Isi konten modal disini -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="assets/img/product1.jpg" class="img-fluid" alt="Product 1">
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Nama Produk</h4>
+                        <p>Harga Sewa</p>
+                        <p>Rp. 200.000</p>
+                        <p><i class="fa-solid fa-star"></i> Rating: 4.9/5</p> <!-- Tambahkan baris ini untuk menampilkan rating -->
+                    </div>
+                </div>
+            </div>            
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                <button type="button" class="btn btn-primary">Sewa</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal untuk Produk 2 -->
+<div class="modal fade" id="productModal2" tabindex="-1" aria-labelledby="productModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productModalLabel2">Detail Produk 2</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Isi konten modal disini -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="assets/product2.jpg" class="img-fluid" alt="Product 2">
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Nama Produk 2</h4>
+                        <p>Harga Sewa</p>
+                        <p>Rp. 200.000</p>
+                        <p><i class="fa-solid fa-star"></i> Rating: 4.9/5</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                <button type="button" class="btn btn-primary">sewa</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Bootstrap JavaScript and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function openNewTab() {
+            window.open('index1.html', '_blank');
+        }
+    </script>
+</body>
+</html>
