@@ -1,0 +1,56 @@
+/* Style for product cards */
+.card {
+    margin-bottom: 20px;
+    margin-left: auto; /* Menggeser card ke pojok kanan */
+    margin-right: 30px; /* Margin kanan tambahan jika diperlukan */
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.btn-primary {
+    font-size: 1rem;
+}
+
+/* Style for footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.link-footer {
+    color: #fff;
+    margin-right: 10px;
+}
+
+.link-footer:hover {
+    text-decoration: none;
+    color: #ffc107;
+}
+
+.btn-outline-light {
+    color: #fff;
+    border-color: #fff;
+    margin-right: 10px;
+}
+
+.btn-outline-light:hover {
+    color: #343a40;
+    background-color: #fff;
+}
+
+.btn-outline-light i {
+    font-size: 1.5rem;
+}
