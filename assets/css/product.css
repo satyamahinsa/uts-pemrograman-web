@@ -1,27 +1,59 @@
+.jumbotron-overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1; /* Membuat overlay berada di bawah konten teks */
+}
+
+.jumbotron-content {
+    position: relative; /* Konten diletakkan relatif terhadap jumbotron */
+    z-index: 2; /* Memastikan konten berada di atas overlay */
+    text-align: center; /* Memusatkan teks */
+    color: white; /* Mengganti warna teks menjadi putih */
+}
+
 .jumbotron {
     background-image: url('/assets/img/wallpaper.png');
     background-size: cover;
     color: #ffffff;
-    text-align: center;
-    padding: 100px 0;
-    margin-bottom: 30px;
+    padding-top: 20px;
+    position: relative; /* Memastikan bahwa overlay dan konten tetap dalam jumbotron */
+    overflow: hidden;
 }
-.jumbotron h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-.card {
-    margin-bottom: 30px;
-}
+
 .card img {
     max-height: 200px;
     object-fit: cover;
 }
-.btn-logo {
+
+footer {
+    background-color: #dba90f;
+}
+
+.beranda-footer {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.link-footer {
+    color: #000;
     background-color: transparent;
     border: none;
-    cursor: pointer;
+    padding: 0;
+    margin-bottom: 2px;
+    text-decoration: none;
 }
+
+.link-footer:hover {
+    text-decoration: underline;
+}
+
 #btn-scroll-to-top {
     cursor: pointer;
     position: fixed;
@@ -31,23 +63,4 @@
     z-index: 1000;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
-}
-.beranda-footer {
-    display: flex;
-    gap: 20px;
-    padding: 0;
-    margin-top: 10px;
-}
-
-.link-footer {
-    color: #fff;
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    margin-bottom: 2px;
-    text-decoration: underline;
-}
-
-.link-footer:hover {
-    text-decoration: none;
 }

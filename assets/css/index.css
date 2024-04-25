@@ -52,6 +52,10 @@
     justify-content: space-between;
 }
 
+footer {
+    background-color: #dba90f;
+}
+
 .beranda-footer {
     display: flex;
     gap: 20px;
@@ -60,16 +64,16 @@
 }
 
 .link-footer {
-    color: #fff;
+    color: #000;
     background-color: transparent;
     border: none;
     padding: 0;
     margin-bottom: 2px;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .link-footer:hover {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 #btn-scroll-to-top {
